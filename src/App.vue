@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <tool-tip content="my tooltip" placement="bottom">
+    <button
+      class="bg-blue-500 text-white text-sm font-medium rounded-md leading-none px-3 py-2"
+    >
+      click me
+    </button>
+  </tool-tip>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ToolTip from "@/components/ToolTip.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ToolTip,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
